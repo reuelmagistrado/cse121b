@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+}
+
+:root {
+  --color-primary: #fffffe;
+  --color-secondary: #0f0e17;
+  --color-tertiary: #ff8906;
+  --headline1: 5.96rem;
+  --headline2: 4.768rem;
+  --headline3: 3.815rem;
+  --headline4: 3.052rem;
+  --paragraph1: 2.441rem;
+  --paragraph2: 1.953rem;
+  --paragraph3: 1.563rem;
+  --paragraph4: 1.25rem;
+}
+
+.wrapper {
+  align-items: center;
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.title {
+  color: var(--color-primary);
+  font-family: "Gugi", cursive;
+  font-size: var(--headline1);
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+}
+
+.category {
+  background: var(--color-tertiary);
+  color: var(--color-secondary);
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  font-size: 2.441rem;
+  width: 15rem;
+}
+
+.category__title {
+  font-family: "Gugi", cursive;
+  color: var(--color-primary);
+  font-size: var(--headline4);
+  text-align: center;
+}
+
+.question__title {
+  color: var(--color-primary);
+}
+
+.question-container {
+  height: auto;
+  background: var(--color-secondary);
+  padding: 2.4rem;
+  font-size: var(--headline4);
+}
+
+.result {
+  color: var(--color-primary);
+  font-size: var(--headline2);
+  text-align: center;
+}
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 1.6rem;
+  background: var(--color-tertiary);
+  color: var(--color-secondary);
+  border-radius: 0.8rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 1.6rem;
+}
+
+ol li {
+  margin-bottom: 2.4rem;
+}
+
+.choice {
+  display: flex;
+  gap: 2.4rem;
+}
+
+input[type="radio"] {
+  scale: 2;
+}
